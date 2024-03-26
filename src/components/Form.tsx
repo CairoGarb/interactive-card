@@ -135,7 +135,7 @@ export function Form() {
             />
             {formSubmitted ? (
                 <div className="result">
-                    <img src='./icon-complete.svg'></img>
+                    <img src='/icon-complete.svg'/>
                     <h1>Thank You!</h1>
                     <p>We've added your card details</p>
                     <button onClick={continueForm}>Continue</button>

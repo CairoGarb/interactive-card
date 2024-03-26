@@ -6,7 +6,7 @@
 .cardsBg {
     min-height: 100vh;
     width: 65%;
-    background: url(./bg-main-desktop.png);
+    background: url(/bg-main-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@
 }
 
 .cardFront {
-    background: url(./bg-card-front.png);
+    background: url(/bg-card-front.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -72,7 +72,7 @@
 }
 
 .cardBack {
-    background: url(./bg-card-back.png);
+    background: url(/bg-card-back.png);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 80px;
@@ -97,7 +97,7 @@
     .cardsBg {
         min-height: 40vh;
         width: 100%;
-        background: url(./bg-main-mobile.png);
+        background: url(/bg-main-mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0 auto;
