@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.appContainer {
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        overflow: visible;
+    }
+}

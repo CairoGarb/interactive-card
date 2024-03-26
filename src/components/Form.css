@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root {
+    --Light-grayish-violet: #dedddf;
+    --Dark-grayish-violet: #8e8593;
+    --Very-dark-violet: #21092f;
+
+    --Linear-gradient: #6448fe to #600594;
+    --Red: #ff5252;
+}
+
+.formContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.formContainer form {
+    width: 35%;
+    min-height: 35vh;
+}
+
+.formContainer form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    overflow: hidden;
+    border: none;
+}
+
+.formContainer form fieldset label {
+    padding-bottom: 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.formContainer form fieldset input {
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid var(--Light-grayish-violet);
+}
+
+.formContainer form fieldset input:focus {
+    outline: none;
+    border: 2px solid #600594;
+}
+
+input::placeholder {
+    color: var(--Light-grayish-violet);
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.inputControl {
+    display: flex;
+    flex-direction: column;
+}
+
+.valContainer {
+    display: flex;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.valDiv {
+    width: 50%;
+}
+
+.valDiv input {
+    width: 40%;
+}
+
+#yearVal {
+    margin-left: 8px;
+}
+
+.cvcDiv {
+    width: 50%;
+}
+
+.cvcDiv input {
+    width: 100%;
+}
+
+form button,
+.result button {
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: var(--Very-dark-violet);
+    color: #fff;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: #600594;
+}
+
+.errorMsg {
+    font-size: 10px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+    color: var(--Red);
+    font-weight: 500;
+}
+
+.inputControl .error,
+.valDiv .error,
+.cvcDiv .error {
+    border-color: #ff5252;
+}
+
+.formContainer .result {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    min-height: 30vh;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+.result h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding-top: 8px;
+}
+
+.result p {
+    color: var(--Dark-grayish-violet);
+    font-weight: 500;
+}
+
+.result button {
+    margin-top: 24px;
+}
+
+
+.result img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 900px) {
+    .formContainer {
+        flex-direction: column;
+        min-height: 50vh;
+    }
+
+    .formContainer form {
+        width: 100%;
+    }
+
+    .formContainer form fieldset {
+        margin: 0 auto;
+    }
+
+    .formContainer .result {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        min-height: 50vh;
+        margin-top: 16px;
+    }
+
+    .formContainer button {
+        padding: 16px;
+    }
+
+    .result h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 32px;
+        padding-top: 24px;
+    }
+
+    .result button {
+        margin-top: 24px;
+        padding: 16px;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .result img {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 900px) {
+    .formContainer .result {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .formContainer form fieldset {
+        width: 280px;
+        margin-bottom: 32px;
+        margin-top: 80px;
+    }
+
+    .formContainer .result {
+        width: 80%;
+        margin-bottom: 32px;
+        margin-top: 32px;
+    }
+}
